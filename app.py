@@ -12,7 +12,7 @@ st.set_page_config(
 
 # Title
 st.title("🤖 RLHF→RLVR Data Quality Analyzer")
-st.markdown("**Analysis of LLM training data quality and the 2025 paradigm shift**")
+st.markdown("**Analysis of LLM training data quality. This project targetted only for self-learning and explorations.**")
 st.caption("Based on analysis of HH-RLHF dataset | Built by Lyra Li| Dec 2025")
 
 # Tabs
