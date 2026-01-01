@@ -80,9 +80,8 @@ with st.sidebar:
     **Size:** 61,135 preference pairs  
     **Annotation:** GPT-4 AI feedback
     
-    **Built by:** [Lyra Li](https://linkedin.com/in/yourprofile)  
-    **GitHub:** [View Code](https://github.com/yourusername/rlvr-analyzer)  
-    **Live Demo:** [Try It](https://your-app.streamlit.app)
+    **Built by:** [Lyra Li](https://linkedin.com/in/lyralix)  
+    **GitHub:** [View Code](https://github.com/yihanlix/ultrafeedback-analysis)  
     """)
     
     st.markdown("---")
@@ -351,8 +350,8 @@ with tab2:
         ],
         'How to Find Out': [
             'User surveys + behavioral analysis',
-            'Consult with CFO on cost sensitivity',
-            'Benchmark top 5 competitors',
+            'Consult with Financial PIC on cost sensitivity',
+            'Benchmark top 3~5 competitors',
             'A/B test concise vs current on 5% traffic',
             'Discuss in quarterly planning'
         ],
@@ -768,13 +767,13 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown("### 🔗 Resources")
     st.markdown("- [UltraFeedback Dataset](https://huggingface.co/datasets/openbmb/UltraFeedback)")
-    st.markdown("- [Project GitHub](https://github.com/yourusername/repo)")
+    st.markdown("- [Project GitHub](https://github.com/lyralix/ultrafeedback-analysis)")
 
 with col2:
     st.markdown("### 👤 About")
     st.markdown("Built by **Lyra Li**")
-    st.markdown("Regional Product Lead @ Shopee")
-    st.markdown("[LinkedIn](https://linkedin.com/in/yourprofile) | [Portfolio](https://yourportfolio.com)")
+    st.markdown("Product Manager (Lead)")
+    st.markdown("[LinkedIn](https://linkedin.com/in/lyralix)")
 
 with col3:
     st.markdown("### 📊 Tech Stack")
