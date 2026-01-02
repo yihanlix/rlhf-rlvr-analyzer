@@ -2,7 +2,7 @@
 AI Feedback Quality Analyzer: RLHF→RLVR Transition Analysis
 Analysis of UltraFeedback dataset (61K examples, GPT-4 annotations, 2024)
 
-Built by Lyra Li | January 2025
+Built by Lyra Li | Dec 2025
 """
 
 import streamlit as st
@@ -637,7 +637,7 @@ with tab5:
             'Inference Cost per 1M Queries'
         ],
         'Current': ['1.16x', 'Unknown', '$100', 'Unknown', 'Unknown', 'Unknown', '$520'],
-        'Target Q2 2025': ['<1.10x', '>80%', '<$90', '<3 weeks', '>45', '>70%', '<$480'],
+        'Target': ['<1.10x', '>80%', '<$90', '<3 weeks', '>45', '>70%', '<$480'],
         'Owner': ['Data PM', 'Ops Lead', 'Data PM', 'Ops Lead', 'Product PM', 'ML Lead', 'Finance'],
         'Alert If': ['>1.30x', '<70%', '>$120', '>5 weeks', '<40', '<65%', '>$600']
     })
@@ -782,4 +782,4 @@ with col3:
     st.markdown("- Plotly, HuggingFace")
 
 st.markdown("---")
-st.caption("© 2025 Lyra Li | AI Feedback Quality Analyzer | Built with ❤️ and ☕")
+st.caption("© 2025 Lyra Li | AI Feedback Quality Analyzer | Built with Claude 3.5 Sonnet ❤️")
