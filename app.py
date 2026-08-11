@@ -2,7 +2,7 @@
 AI Feedback Quality Analyzer: RLHF→RLVR Transition Analysis
 Analysis of UltraFeedback dataset (61K examples, GPT-4 annotations, 2024)
 
-Built by Lyra Li | Dec 2025
+Built by Wanyi (Olivia) Li | Dec 2025
 """
 
 import streamlit as st
@@ -92,7 +92,7 @@ with st.sidebar:
     **Size:** 61,135 preference pairs  
     **Annotation:** GPT-4 AI feedback
     
-    **Built by:** [Lyra Li](https://linkedin.com/in/lyralix)  
+    **Built by:** Wanyi (Olivia) Li  
     **GitHub:** [View Code](https://github.com/yihanlix/rlhf-rlvr-analyzer)  
     """)
     
@@ -783,9 +783,8 @@ with col1:
 
 with col2:
     st.markdown("### 👤 About")
-    st.markdown("Built by **Lyra Li**")
+    st.markdown("Built by **Wanyi (Olivia) Li**")
     st.markdown("Product Manager (Lead)")
-    st.markdown("[LinkedIn](https://linkedin.com/in/lyralix)")
 
 with col3:
     st.markdown("### 📊 Tech Stack")
@@ -794,4 +793,4 @@ with col3:
     st.markdown("- Plotly, HuggingFace")
 
 st.markdown("---")
-st.caption("© 2025 Lyra Li | AI Feedback Quality Analyzer | Built with Claude 3.5 Sonnet ❤️")
+st.caption("© 2025 Wanyi (Olivia) Li | AI Feedback Quality Analyzer | Built with Claude 3.5 Sonnet ❤️")
