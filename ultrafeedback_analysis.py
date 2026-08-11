@@ -184,29 +184,5 @@ with open(output_file, 'w') as f:
 
 print(f"\n✅ Results saved to: {output_file}")
 
-print("\n" + "=" * 80)
-print("KEY INSIGHTS FOR YOUR ANALYZER:")
-print("=" * 80)
-print("""
-1. UltraFeedback uses GPT-4 for annotation (AI feedback, not human)
-   → Shows you understand modern RLAIF approach!
-   
-2. Larger & more diverse than HH-RLHF
-   → 64K prompts vs 160K pairs, but from 6 different sources
-   
-3. Has fine-grained scores on 4 dimensions
-   → You can analyze which aspect has most bias
-   
-4. More relevant for 2025 ByteDance interview
-   → "I analyzed the UltraFeedback dataset, which uses GPT-4 annotations..."
-   → Shows you're current with AI feedback trends
-   
-5. Can still analyze same issues:
-   ✅ Verbosity bias
-   ✅ Inconsistency patterns
-   ✅ Cost optimization (RLHF vs RLVR)
-   ✅ Process improvements
-""")
-
 print("\n🎉 ANALYSIS COMPLETE!")
 print("=" * 80)

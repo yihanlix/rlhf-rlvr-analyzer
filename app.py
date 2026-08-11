@@ -11,6 +11,7 @@ import numpy as np
 import plotly.graph_objects as go
 import plotly.express as px
 import json
+import os
 
 # ============================================================================
 # PAGE CONFIG
@@ -27,11 +28,22 @@ st.set_page_config(
 # LOAD DATA
 # ============================================================================
 
+RESULTS_FILE = "ultrafeedback_analysis_results.json"
+
+
 @st.cache_data
 def load_analysis_results():
-    """Load the analysis results from JSON file"""
-    # You'll replace this with your actual JSON file
-    # For now, using the data you provided
+    """Load analysis results.
+
+    Prefers the JSON written by `ultrafeedback_analysis.py`. Falls back to the
+    committed results below -- the real output of that script on UltraFeedback's
+    61,135-pair train split -- so the dashboard runs without first downloading
+    the full dataset from HuggingFace.
+    """
+    if os.path.exists(RESULTS_FILE):
+        with open(RESULTS_FILE) as f:
+            return json.load(f)
+
     data = {
         "dataset_name": "UltraFeedback (GPT-4 AI Feedback)",
         "total_examples": 61135,
@@ -81,7 +93,7 @@ with st.sidebar:
     **Annotation:** GPT-4 AI feedback
     
     **Built by:** [Lyra Li](https://linkedin.com/in/lyralix)  
-    **GitHub:** [View Code](https://github.com/yihanlix/ultrafeedback-analysis)  
+    **GitHub:** [View Code](https://github.com/yihanlix/rlhf-rlvr-analyzer)  
     """)
     
     st.markdown("---")
@@ -767,7 +779,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown("### 🔗 Resources")
     st.markdown("- [UltraFeedback Dataset](https://huggingface.co/datasets/openbmb/UltraFeedback)")
-    st.markdown("- [Project GitHub](https://github.com/lyralix/ultrafeedback-analysis)")
+    st.markdown("- [Project GitHub](https://github.com/yihanlix/rlhf-rlvr-analyzer)")
 
 with col2:
     st.markdown("### 👤 About")
